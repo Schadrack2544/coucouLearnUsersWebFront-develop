@@ -1,0 +1,68 @@
+@import './video-react.css';
+
+.scrollbar::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  /* border-radius: 100vh; */
+  background: white;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #193059;
+  border-radius: 100vh;
+  border: 3px solid white;
+}
+
+/* .scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+} */
+
+/* SLIDE LEFT */
+.slideLeft {
+  animation: slideLeft 0.5s linear;
+}
+
+.delay-left-0\/1 {
+  animation: slideLeft 0.1s linear;
+}
+
+.delay-left-0\/2 {
+  animation: slideLeft 0.2s linear;
+}
+
+.delay-left-0\/3 {
+  animation: slideLeft 0.3s linear;
+}
+
+.delay-left-0\/4 {
+  animation: slideLeft 0.4s linear;
+}
+
+.delay-left-1\/5 {
+  animation: slideLeft 1.5s linear;
+}
+
+.delay-left-1 {
+  animation: slideLeft 1s linear;
+}
+
+.delay-left-2 {
+  animation: slideLeft 2s linear;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
